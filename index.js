@@ -27,7 +27,7 @@ setInterval(() => {
 
 music.on('message', async message => {
 
-    let prefix = 'mpk!';
+    let prefix = 'mpi!';
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(" ");
     let cmd = args.shift().toLowerCase();
@@ -45,30 +45,27 @@ music.on('message', async message => {
         console.log(`${message.author.username} ran the command: ${cmd} on ${message.guild.name}`);
     }
 
-if (message.content === "mpk!join")
+if (message.content === "mpi!join")
   {
       message.member.voiceChannel.join()
                     .then(connection => {
     console.log("joined channel");
-      	const dispatcher = connection.playStream(ytdl(`https://www.youtube.com/watch?v=XggKv1RhQYo`))
+      	const dispatcher = connection.playStream(ytdl(`https://www.youtube.com/watch?v=QfL-atdq5r4`))
         	connection.dispatcher.setVolumeLogarithmic(1);
     message.channel.send({embed: new Discord.RichEmbed()
                     .setAuthor(message.author.tag,message.author.avatarURL)
-                    .setDescription(`Music Player Kpop, Joined Your Voice channel <a:a:532595746638397440>`)
+                    .setDescription(`Music Player Indo, Joined Your Voice channel <a:a:532595746638397440>`)
 .setColor("RANDOM")
                          })
 function tetew() {
     console.log("joined channel");
     const pokesamwan = [ //KATAKATAPOKESAMWAN
-        `https://www.youtube.com/watch?v=ToCuK4UJVRQ&t=14s`,
-        `https://www.youtube.com/watch?v=0cQG2J4KE5E`, 
-        `https://www.youtube.com/watch?v=MzKFCcqU3zA`,
-        `https://www.youtube.com/watch?v=VtC0nT7_Qvs`,
-        `https://www.youtube.com/watch?v=EHH-HhYX0dk`,
-        `https://www.youtube.com/watch?v=0cQG2J4KE5E`,
-        `https://www.youtube.com/watch?v=feXwPDeXvLs`,
-        `https://www.youtube.com/watch?v=G3eIpaKEziI`,
-        `https://www.youtube.com/watch?v=hpSHy-lHEac`
+        `https://www.youtube.com/watch?v=Pjxnery7i80`,
+        `https://www.youtube.com/watch?v=aV5ctic2m7c`,
+        `https://www.youtube.com/watch?v=ueFoN3CkeFs`,
+        `https://www.youtube.com/watch?v=CEykUQCktpQ`,
+        `https://www.youtube.com/watch?v=sbymJlnzOBU`,
+        `https://www.youtube.com/watch?v=BX7-IkC2HxY`
 
     ];
 const wordAnswer = pokesamwan[Math.floor(Math.random() * pokesamwan.length)]
@@ -80,7 +77,7 @@ const wordAnswer = pokesamwan[Math.floor(Math.random() * pokesamwan.length)]
                     .setDescription(`Radio Music Next <a:a:532595746638397440>`)
 .setColor("RANDOM")
                          })
-}; setInterval(tetew, 1800000)
+}; setInterval(tetew, 3900000)
                         
  })
 
@@ -92,14 +89,15 @@ music.login(process.env.TOKEN);
 music.on("ready", async () => {
 function botStatus() {  
 let status = [
-`mpk!join - mpk!leave`,
+`mpi!join - mpi!leave`,
 `in ${music.guilds.size} server.`,
 `24H active`,
 `https://discord.gg/3pe7c6h`
   ];
   let rstatus = Math.floor(Math.random() * status.length);
   music.user.setActivity(status[rstatus], {Type: 'STREAMING', url:'https://www.twitch.tv/verterid'});
-}; setInterval(botStatus, 10000)    
+}; setInterval(botStatus, 10000) 
+   
 console.log("ready");
     console.log(`Logged in as : ${music.user.tag}`);
     console.log(`${music.user.username} is ready!`)
