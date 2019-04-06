@@ -75,7 +75,7 @@ const wordAnswer = pokesamwan[Math.floor(Math.random() * pokesamwan.length)]
     message.channel.send({embed: new Discord.RichEmbed()
                     .setAuthor(message.author.tag,message.author.avatarURL)
                     .setDescription(`Radio Music Next ⏭`)
-.setColor("RANDOM")
+.setColor("#0aaaeb")
                          })
 }; setInterval(tetew, 3900000)
                         
