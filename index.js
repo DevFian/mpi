@@ -27,7 +27,7 @@ setInterval(() => {
 
 music.on('message', async message => {
 
-    let prefix = 'mpi!';
+    let prefix = 'gmi!';
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(" ");
     let cmd = args.shift().toLowerCase();
@@ -45,7 +45,7 @@ music.on('message', async message => {
         console.log(`${message.author.username} ran the command: ${cmd} on ${message.guild.name}`);
     }
 
-if (message.content === "mpi!join")
+if (message.content === "gmi!join")
   {
       message.member.voiceChannel.join()
                     .then(connection => {
@@ -89,10 +89,10 @@ music.login(process.env.TOKEN);
 music.on("ready", async () => {
 function botStatus() {  
 let status = [
-`mpi!join - mpi!leave`,
+`gmi!join - gmi!leave`,
 `in ${music.guilds.size} server.`,
 `24H active`,
-`https://discord.gg/3pe7c6h`
+`https://discord.gg/STY4k2N`
   ];
   let rstatus = Math.floor(Math.random() * status.length);
   music.user.setActivity(status[rstatus], {Type: 'STREAMING', url:'https://www.twitch.tv/verterid'});
