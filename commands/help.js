@@ -6,8 +6,7 @@ exports.run = async (bot, message, args) => {
 .setAuthor('Music Player Indo', bot.user.avatarURL)
 .addField(`
 gmi!join = Join Your Voice channel
-gmi!leave = Leave Your Voice Channel
-gmi!invite = Invite bot to the guild`, '---=---=---=---=---=---=---=---=--- \n [`Klik Disini Untuk Invite`](https://discordapp.com/oauth2/authorize?client_id=564066647552425985&permissions=8&scope=bot)', true)
+gmi!leave = Leave Your Voice Channel`, '---=---=---=---=---=---=---=---=--- \n [`Klik Disini Untuk Invite`](https://discordapp.com/oauth2/authorize?client_id=564066647552425985&permissions=8&scope=bot)', true)
   .setThumbnail(bicon)
     .setColor('#0aaaeb')
 
