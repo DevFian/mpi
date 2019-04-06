@@ -50,22 +50,22 @@ if (message.content === "gmi!join")
       message.member.voiceChannel.join()
                     .then(connection => {
     console.log("joined channel");
-      	const dispatcher = connection.playStream(ytdl(`https://www.youtube.com/watch?v=QfL-atdq5r4`))
+      	const dispatcher = connection.playStream(ytdl(`https://www.youtube.com/watch?v=eHxWHBxWA_E`))
         	connection.dispatcher.setVolumeLogarithmic(1);
     message.channel.send({embed: new Discord.RichEmbed()
                     .setAuthor(message.author.tag,message.author.avatarURL)
-                    .setDescription(`Music Player Indo, Joined Your Voice channel <a:a:532595746638397440>`)
-.setColor("RANDOM")
+                    .setDescription(`Gobang Music Indo, Joined Your Voice channel 📻`)
+.setColor("#0aaaeb")
                          })
 function tetew() {
     console.log("joined channel");
     const pokesamwan = [ //KATAKATAPOKESAMWAN
-        `https://www.youtube.com/watch?v=Pjxnery7i80`,
-        `https://www.youtube.com/watch?v=aV5ctic2m7c`,
+        `https://www.youtube.com/watch?v=B7eMR8V5Fgo`,
+        `https://www.youtube.com/watch?v=_O86wrdRVM8`,
         `https://www.youtube.com/watch?v=ueFoN3CkeFs`,
         `https://www.youtube.com/watch?v=CEykUQCktpQ`,
-        `https://www.youtube.com/watch?v=sbymJlnzOBU`,
-        `https://www.youtube.com/watch?v=BX7-IkC2HxY`
+        `https://www.youtube.com/watch?v=a_1m7Sqk4tE`,
+        `https://www.youtube.com/watch?v=62CQG5YFI3E`
 
     ];
 const wordAnswer = pokesamwan[Math.floor(Math.random() * pokesamwan.length)]
@@ -74,7 +74,7 @@ const wordAnswer = pokesamwan[Math.floor(Math.random() * pokesamwan.length)]
         	connection.dispatcher.setVolumeLogarithmic(1);
     message.channel.send({embed: new Discord.RichEmbed()
                     .setAuthor(message.author.tag,message.author.avatarURL)
-                    .setDescription(`Radio Music Next <a:a:532595746638397440>`)
+                    .setDescription(`Radio Music Next ⏭`)
 .setColor("RANDOM")
                          })
 }; setInterval(tetew, 3900000)
