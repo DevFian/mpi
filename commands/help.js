@@ -5,11 +5,12 @@ exports.run = async (bot, message, args) => {
   let patrick = new Discord.RichEmbed()
 .setAuthor('Music Player Indo', bot.user.avatarURL)
 .addField(`
-mpi!join = Join Your Voice channel
-mpi!leave = Leave Your Voice Channel
-mpi!invite = Invite bot to the guild`, '---=---=---=---=---=---=---=---=---', true)
-.setColor("RANDOM")
+gmi!join = Join Your Voice channel
+gmi!leave = Leave Your Voice Channel
+gmi!invite = Invite bot to the guild`, '---=---=---=---=---=---=---=---=--- \n [`Klik Disini Untuk Invite`](https://discordapp.com/oauth2/authorize?client_id=564066647552425985&permissions=8&scope=bot)', true)
   .setThumbnail(bicon)
+    .setColor('#0aaaeb')
+
 message.channel.send(patrick);
 }
 
